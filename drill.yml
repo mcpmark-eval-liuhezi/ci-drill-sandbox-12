@@ -1,0 +1,12 @@
+name: Drill
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  sleep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simulate a stuck build by sleeping
+        run: sleep 600
